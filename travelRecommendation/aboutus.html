@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Travel Website</title>
+        <style>
+            html,body{
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            #aboutus{
+                background-color: rgb(4, 4, 150);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                height: 5em;
+            }
+            .profile_name{
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                margin: 1cm -1cm 1cm 0;
+                font-size: 25px;
+                font-weight: bolder;
+                font-style: italic;
+                width: 50%;
+            }
+            .topmenu{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-items: center;
+                padding: 1em;
+                text-align: justify;
+                text-decoration: none;
+                width: 50%;
+                gap: 30px;
+            }
+            .topmenu a {
+                color: white;
+                text-decoration: none;
+                margin: 10px;
+            }
+
+            a:hover{
+                font-weight:bold ;
+                text-decoration: underline;
+            }
+
+
+            button{
+                background-color: green;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                border: 1px solid green;
+                border-radius: 10px;
+                font-size: 15px;
+                cursor: pointer;
+            }
+            .about_us{
+                display: flex;
+                flex-direction: column;
+                background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('./images/Monument_des_martyrs1.jpg');
+                background-position: center;
+                background-size: cover;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                min-height: 100vh;
+            }
+            .about_us_page{
+                display: flex;
+                flex-flow: row-reverse nowrap;
+                justify-content: left;
+                align-items: start;
+                gap: 30px;
+            }
+            .about_us_page img{
+                width: 25px;
+                padding: 10px 20px 10px 20px;
+            }
+            .social_medias{
+                padding-top: 12%;
+                display: flex;
+                flex-flow: column nowrap;
+                gap: 10px;
+            }
+            .words_about_us{
+                display: flex;
+                flex-direction: column;
+                color: white;
+                font-size: large;
+                gap: 30px;
+            }
+
+            .our_team{
+                color: white;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content:space-between;
+                align-items: center;
+
+            }
+            .our_team h1 {
+                width: 4ch;
+            }
+
+            .team_element{
+                color: rgb(143, 147, 150);
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                justify-content: start;
+            }
+            .welcome p{
+                width: 30cm;
+            }
+
+            .team_element img{
+                width: 35px;
+            }
+            .identity {
+                text-align: center;
+                width: 31ch;
+            }
+
+            .role {
+                width: auto;
+                background-color: rgb(15, 3, 87);
+                height: auto;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+                border: 1px solid rgb(15, 3, 87);
+                border-radius: 15px;
+                padding: 5px 10px 5px 10px;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div id="aboutus">
+                <div class="profile_name">
+                    <img src="./images/icon.png" width="80px">TravelBloom 
+                </div>
+                <div class="topmenu">
+                    <a href="./travel_recommendation.html">Home</a>
+                    <a href="#aboutus">About Us</a>
+                    <a href="./contacts.html">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+        <div class="about_us">
+            <div class="about_us_page">
+                
+                <div class="words_about_us">
+                    <h1>ABOUT US</h1>
+                    <div class="welcome">
+                        <p>
+                            Welcome to Our Company ! We are a team of passionate individuals dedicated to providing excellent services to our costumers.
+                            Our misssion is to provide the best experience for people traveling to different destination around the world.
+                        </p>
+                        <p>
+                            Our values include integrity , innovation , costumer satisfaction , and teamwork. We believe in putting our costumers first and working together to achieve
+                            our goals.
+                        </p>
+                        <p>
+                            Feel free to explore our website to learn more about what we offer!
+                        </p>
+                    </div>
+                    <div class="our_team">
+                        <h1>OUR TEAM</h1>
+                        <div class="team_element">
+                            <img src="./images/icon_member.png">
+                            <div class="identity">
+                                <h3>JOHN Doe</h3>
+                                <p>
+                                    JOHN is a responsible for overall Company strategy and vision
+                                </p>
+                            </div>
+                            <div class="role">
+                                CEO
+                            </div>
+                        </div>
+                        <div class="team_element">
+                            <img src="./images/icon_member.png">
+                            <div class="identity">
+                                <h3>CELLINA Thomas</h3>
+                                <p>CELLINA leads the technical and operations team</p>
+                            </div>
+                            <div class="role">Team Lead</div>
+                        </div>
+                        <div class="team_element">
+                            <img src="./images/icon_member.png">
+                            <div class="identity">
+                                <h3>MIKE Tyson</h3>
+                                <p>MIKE manages project delivery and client relationships</p>
+                            </div>
+                                <div class="role">Delivery Head</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social_medias">
+                    <a href="http://www.x.com" target="_blank">
+                        <img src="images/logo-twitter-blanc-png.png">
+                    </a>
+                    <a href="http://www.facebook.com" target="_blank">
+                        <img src="images/icon_facebook.png" style="width: 15px;">
+                    </a>
+                    <a href="http://www.intagram.com" target="_blank">
+                        <img src="./images/icon_intagram.png">
+                    </a>
+                    <a href="http://www.youtube.com" target="_blank">
+                        <img src="./images/logo-youtube-blanc-png.png">
+                    </a>
+                </div>  
+            </div>
+            
+        
+        </div>
+    </body>
+</html>
