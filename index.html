@@ -65,7 +65,6 @@
                 gap: 5px;
                 padding: 5px ;
                 height: 1cm;
-            
             }
 
             button{
@@ -145,6 +144,63 @@
             }
             .container_result h1 {
                 color:orangered;
+            }
+            @medias (max-width: 768){
+                #home{
+                background-color: rgb(4, 4, 150);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+               .topmenu{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-items: center;
+                padding: 1em;
+                text-align: justify;
+                text-decoration: none;
+                width: 100%;
+                gap: 30px;
+            } 
+                .result{
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap: 20px;
+                grid-auto-flow: row;
+                padding: 10px;
+            }
+                #searchForm{
+                width:auto;
+                margin-right: 10px;
+                border-radius: 20px;
+                background-color: white;
+                flex: 1 1 auto;
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: stretch;
+                gap: 5px;
+                padding: 5px ;
+            }
+                .home_text{
+                margin-top: 12%;
+                width: 100%;
+                color: aliceblue;
+                font-size: large;
+                margin-left: 90px;
+            }
+            .social_medias{
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 20px;
+            }
+            .home_page{
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+            }        
             }
         </style>
     </head>
